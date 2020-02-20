@@ -1,0 +1,20 @@
+apiVersion: k8-app/v1
+kind: Deployment
+metadata:
+  name: k8-image
+spec:
+  selector:
+    matchLabels:
+      app: k8-image
+  replicas: 2 
+  template:
+    metadata:
+      labels:
+        app: k8-image
+    spec:
+      containers:
+      - name: k8-image
+        image: ngcr.io/demoreactive-264604/k8-image
+        ports:
+        - containerPort: 8091
+---        
