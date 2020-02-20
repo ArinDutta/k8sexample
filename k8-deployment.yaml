@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: k8-image
-        image: ngcr.io/demoreactive-264604/k8-image
+        image: gcr.io/demoreactive-264604/k8-image
         ports:
         - containerPort: 8091
 ---        
