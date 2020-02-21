@@ -2,7 +2,9 @@ spring:
   cloud:
     kubernetes:
       config:
-        enabled: false
+        enabled: true
         sources:
           - namespace: default
-            name: k8-image
+            name: config-example
+      reload:
+        enabled: true
