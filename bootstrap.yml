@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    kubernetes:
+      config:
+        enabled: false
+        sources:
+          - namespace: default
+            name: k8-image
