@@ -17,6 +17,16 @@ spec:
         image: gcr.io/demoreactive-264604/k8-image
         ports:
         - containerPort: 8091
+        volumeMounts:
+        - name: application-config
+          mountPath: /etc/config
+      volumes:
+      - name: application-config
+        configMap:
+          name: k8-example
+          items:
+          - key: application.properties 
+            path: application.properties  
 ---
 apiVersion: v1
 kind: Service
