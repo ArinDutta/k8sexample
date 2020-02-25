@@ -9,4 +9,4 @@ spec:
       - path: /hello/cloud
         backend:
           serviceName: k8-image-service
-          servicePort: 32001
+          servicePort: 8080
