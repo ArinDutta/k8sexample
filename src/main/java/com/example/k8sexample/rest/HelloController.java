@@ -16,5 +16,10 @@ public class HelloController {
 	public ResponseEntity<String> sayHello() {
 		return new ResponseEntity<>(welcomeMessage, HttpStatus.OK);
 	}
+	
+	@GetMapping("/")
+	public ResponseEntity<?> info(){
+		return new ResponseEntity<>(HttpStatus.OK);
+	}
 
 }
