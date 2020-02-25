@@ -4,7 +4,7 @@ data:
     spring.application.name=k8-image
     server.port=8091
     welcome.message=Hello! It is a sample Application for Google Cloud Kubernetes ConfigMap
-    spring.cloud.kubernetes.reload.enabled=true
+    management.endpoints.web.exposure.include=health,info
 kind: ConfigMap
 metadata:
   annotations:
