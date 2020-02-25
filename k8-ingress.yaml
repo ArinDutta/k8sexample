@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gcloud-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /hello/cloud
+        backend:
+          serviceName: k8-image-service
+          servicePort: 8080
