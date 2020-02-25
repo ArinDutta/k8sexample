@@ -26,7 +26,7 @@ metadata:
     name: k8-image-service
 spec:
   ports:
-    - port: 8080
+    - port: 32001
       targetPort: 8091
       protocol: TCP
   selector:
