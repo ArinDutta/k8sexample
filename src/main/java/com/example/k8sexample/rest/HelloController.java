@@ -18,7 +18,7 @@ public class HelloController {
 	}
 	
 	@GetMapping("/")
-	public ResponseEntity<?> info(){
+	public ResponseEntity info(){
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
